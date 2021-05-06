@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- file: views/professor/show.php -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{titles}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{titles}}</h2>
+
+     {{#show}}<form>{{/show}}
+     {{#create}}<form action="/book" method="POST">{{/create}}
+     {{#edit}}<form action="/book/{{id}}" method="POST">
+        <input type="hidden" name="_method" value="PUT">{{/edit}}
+        {{#book}}
+
+     <div class="row">
+      <div class="six columns">
+       <label for="nameInput">Title</label>
+       <input class="u-full-width" type="text" name="title" {{#show}} readonly {{/show}}
+          id="title" value="{{title}}">
+      </div>
+      <div class="six columns">
+       <label for="degreeInput">Edition</label>
+       <input class="u-full-width" type="text" name="edition" {{#show}} readonly {{/show}}
+          id="edition" value="{{edition}}">
+      </div>
+     </div>
+     <div class="row">
+      <div class="six columns">
+       <label for="emailInput">Copyright</label>
+       <input class="u-full-width" type="text" name="copyright" {{#show}} readonly {{/show}}
+          id="copyright" value="{{copyright}}">
+      </div>
+      <div class="six columns">
+       <label for="language">Language</label>
+       <input class="u-full-width" type="text" name="language" {{#show}} readonly {{/show}}
+         id="language" value="{{language}}">
+      </div>
+      <div class="row">
+         <div class="six columns">
+          <label for="pages">Pages</label>
+          <input class="u-full-width" type="text" name="pages {{#show}} readonly {{/show}}
+             id="pages" value="{{pages}}">
+         </div>
+         <div class="six columns">
+          <label for="author">Author</label>
+          <input class="u-full-width" type="text" name="author" {{#show}} readonly {{/show}}
+            id="author" value="{{author}}">
+         </div>
+      <a class="button button-primary" href="/book">Back</a>
+      {{#edit}}<input style="float: right" class="button-primary" type="submit" value="Update">{{/edit}}
+     {{#create}}<input style="float: right" class="button-primary" type="submit" value="Create">{{/create}}
+    </div>
+    {{/book}}
+    </form>
+   </div>
+  </div>
+ </div>
+</body>

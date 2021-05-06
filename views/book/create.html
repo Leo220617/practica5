@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- file: views/professor/create.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    <form action="/book" method="post">
+     <div class="row">
+      <div class="six columns">
+       <label for="title">Title</label>
+       <input class="u-full-width" type="text" 
+          name="title">
+      </div>
+      <div class="six columns">
+       <label for="edition">Edition</label>
+       <input class="u-full-width" type="text" 
+          name="edition">
+      </div>
+     </div>
+     <div class="row">
+      <div class="six columns">
+       <label for="copyright">Copyright</label>
+       <input class="u-full-width" type="text" 
+          name="copyright">
+      </div>
+      <div class="six columns">
+       <label for="language">Language</label>
+       <input class="u-full-width" type="text"
+         name="language">
+      </div>
+     </div>
+
+     <div class="row">
+        <div class="six columns">
+         <label for="pages">Pages</label>
+         <input class="u-full-width" type="text" 
+            name="pages">
+        </div>
+        <div class="six columns">
+         <label for="author">Author</label>
+         <input class="u-full-width" type="text"
+           name="author">
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="six columns">
+         <label for="author_id">Author_id</label>
+         <input class="u-full-width" type="number" 
+            name="author_id">
+        </div>
+        <div class="six columns">
+         <label for="publisher">Publisher</label>
+         <input class="u-full-width" type="text"
+           name="publisher">
+        </div>
+       </div>
+       <div class="row">
+        <div class="six columns">
+         <label for="publisher_id">publisher_id</label>
+         <input class="u-full-width" type="number" 
+            name="publisher_id">
+        </div>
+        <div class="six columns">
+        
+        </div>
+       </div>
+
+     <input class="button-primary" type="submit" value="Create">
+    </form>
+   </div>
+  </div>
+ </div>
+</body>

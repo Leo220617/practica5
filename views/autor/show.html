@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- file: views/professor/show.php -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    {{#show}}<form>{{/show}}
+      {{#create}}<form action="/autor" method="POST">{{/create}}
+      {{#edit}}<form action="/autor/{{id}}" method="POST">
+         <input type="hidden" name="_method" value="PUT">{{/edit}}
+   
+        {{#autores}}
+     <div class="row">
+      <div class="six columns">
+       <label for="author">Author</label>
+       <input class="u-full-width" type="text" name="author" {{#show}} readonly {{/show}}
+          id="author" value="{{author}}">
+      </div>
+      <div class="six columns">
+       <label for="nationality">Nationality</label>
+       <input class="u-full-width" type="text" name="nationality" {{#show}} readonly {{/show}}
+          id="nationality" value="{{nationality}}">
+      </div>
+     </div>
+     <div class="row">
+      <div class="six columns">
+       <label for="birth_year">Birth Year</label>
+       <input class="u-full-width" type="text" name="birth_year" {{#show}} readonly {{/show}}
+          id="birth_year" value="{{birth_year}}">
+      </div>
+      <div class="six columns">
+       <label for="fields">Fields</label>
+       <input class="u-full-width" type="text" name="fields" {{#show}} readonly {{/show}}
+         id="fields" value="{{fields}}">
+      </div>
+      <a class="button button-primary" href="/author">Back</a>
+    {{/autores}}
+    </form>
+   </div>
+  </div>
+ </div>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- file: views/professor.php -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="eleven column" style="text-align: left; margin-top: 5%;">
+      <button><a href="/">Home</a></button>
+    </div>
+   <div class="eleven column" style="margin-top: 10%">
+     <h2>{{title}}</h2>
+     <table>
+      <tr><th>Name</th>
+          <th>Country</th><th>Founded</th>
+          <th>Genere</th></tr>
+       
+       {{#editorial}}
+      <tr>
+    <!--  <td>{{id}}</td>-->
+          <td><a href="/editorial/{{id}}"> {{publisher}}</a></td>
+          <td>{{country}}</td>
+          <td>{{founded}}</td>
+          <td> {{genere}} </td>
+          <td>
+            <a class="button" href="editorial/{{id}}">Show</a>
+            {{#login}}
+            <a class="button" href="editorial/{{id}}/edit">Edit</a>
+            <a class="button" href="editorial/{{id}}/delete">Erase</a>
+            {{/login}}
+            </td>
+          </tr>
+   {{/editorial}}
+     </table>
+     <a class="button button-primary" href="/editorial/create">New</a>
+    </div>
+   </div>
+ </div>
+</body>

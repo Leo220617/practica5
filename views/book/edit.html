@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- file: views/professor/edit.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    {{#books}}
+    <form action="/book/{{id}}" method="POST">
+     <input type="hidden" name="_method" value="PUT">
+     <div class="row">
+        <div class="six columns">
+         <label for="title">Title</label>
+         <input class="u-full-width" type="text" 
+            name="title" value="{{title}}">
+        </div>
+        <div class="six columns">
+         <label for="edition">Edition</label>
+         <input class="u-full-width" type="text" 
+            name="edition" value="{{edition}}">
+        </div>
+       </div>
+       <div class="row">
+        <div class="six columns">
+         <label for="copyright">Copyright</label>
+         <input class="u-full-width" type="text" 
+            name="copyright" value="{{copyright}}" > 
+        </div>
+        <div class="six columns">
+         <label for="language">Language</label>
+         <input class="u-full-width" type="text"
+           name="language" value="{{language}}">
+        </div>
+       </div>
+  
+       <div class="row">
+          <div class="six columns">
+           <label for="pages">Pages</label>
+           <input class="u-full-width" type="text" 
+              name="pages" value="pages">
+          </div>
+          <div class="six columns">
+           <label for="author">Author</label>
+           <input class="u-full-width" type="text"
+             name="author" value="{{author}}">
+          </div>
+         </div>
+  
+         <div class="row">
+          <div class="six columns">
+           <label for="author_id">Author_id</label>
+           <input class="u-full-width" type="number" 
+              name="author_id" value="{{author_id}}">
+          </div>
+          <div class="six columns">
+           <label for="publisher">Publisher</label>
+           <input class="u-full-width" type="text"
+             name="publisher" value="{{publisher}}">
+          </div>
+         </div>
+         <div class="row">
+          <div class="six columns">
+           <label for="publisher_id">publisher_id</label>
+           <input class="u-full-width" type="number" 
+              name="publisher_id" value="{{publisher_id}}">
+          </div>
+          <div class="six columns">
+          
+          </div>
+         </div>
+     <input class="button-primary" type="submit" value="Update">
+    </form>
+    {{/books}}
+   </div>
+  </div>
+ </div>
+</body>

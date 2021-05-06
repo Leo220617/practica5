@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- file: views/professor/edit.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    {{#autores}}
+    <form action="/author/{{id}}" method="POST">
+     <input type="hidden" name="_method" value="PUT">
+     <div class="row">
+        <div class="six columns">
+         <label for="author">Author</label>
+         <input class="u-full-width" type="text" 
+            name="author" value="{{author}}">
+        </div>
+        <div class="six columns">
+         <label for="nationality">Nationality</label>
+         <input class="u-full-width" type="text" 
+            name="nationality" value="{{nationality}}">
+        </div>
+       </div>
+       <div class="row">
+        <div class="six columns">
+         <label for="birth_year">Birth Year</label>
+         <input class="u-full-width" type="text" 
+            name="birth_year" value="{{birth_year}}">
+        </div>
+        <div class="six columns">
+         <label for="fields">Fields</label>
+         <input class="u-full-width" type="text"
+           name="fields" value="{{fields}}">
+        </div>
+       </div>
+  
+       <div class="row">
+          <div class="six columns">
+           <label for="books__book_id">Book id</label>
+           <input class="u-full-width" type="text" 
+              name="books__book_id" value="{{books__book_id}}">
+          </div>
+          <div class="six columns">
+           <label for="books__title">Book's Title</label>
+           <input class="u-full-width" type="text"
+             name="books__title" value="{{books__title}}">
+          </div>
+         </div>
+  
+       
+     <input class="button-primary" type="submit" value="Update">
+    </form>
+    {{/autores}}
+   </div>
+  </div>
+ </div>
+</body>

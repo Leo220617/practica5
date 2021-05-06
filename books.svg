@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" x="0" y="0" width="640" height="460" viewBox="0, 0, 640, 460" xmlns="http://www.w3.org/2000/svg">
+  <text style="white-space: pre;" x="519.078" y="439.663">
+      <tspan x="442.123" y="440.867" font-family="Helvetica" font-size="10" fill="#000000" style="font-size: 10px; word-spacing: 0px;">© Armando Arce Orozco - 2020</tspan>
+    </text>
+  <path d="M 169.202 88.988 L 262.34 88.988 L 262.34 112.212 L 169.202 112.212 L 169.202 88.988 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="217.702" y="100.6">
+      <tspan x="203.952" y="102.969" font-family="HelveticaNeue-Bold" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">Book</tspan>
+    </text>
+  <path d="M 169.202 112.212 L 262.34 112.212 L 262.34 184.204 L 169.202 184.204 L 169.202 112.212 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="215.771" y="147.821"><tspan x="215.77099609375" dy="1em">​</tspan>       <tspan x="206.91" y="124.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">title</tspan><tspan x="215.77099609375" dy="1em">​</tspan>     <tspan x="192.754" y="137.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">copyright</tspan><tspan x="215.77099609375" dy="1em">​</tspan>    <tspan x="215.77099609375" dy="1em">​</tspan>  <tspan x="199.167" y="150.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">edition</tspan><tspan x="215.77099609375" dy="1em">​</tspan>      <tspan x="200.899" y="163.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">pages<tspan x="215.77099609375" dy="1em">​</tspan></tspan><tspan x="215.77099609375" dy="1em">​</tspan>    </text>
+  <path d="M 369.579 88.988 L 462.717 88.988 L 462.717 112.212 L 369.579 112.212 L 369.579 88.988 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="418.079" y="100.872">
+      <tspan x="400.353" y="102.97" font-family="HelveticaNeue-Bold" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">Author</tspan>
+    </text>
+  <path d="M 369.579 112.212 L 462.717 112.212 L 462.717 184.204 L 369.579 184.204 L 369.579 112.212 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="416.148" y="147.821"><tspan x="416.14801025390625" dy="1em">​</tspan>      <tspan x="402.596" y="124.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">name</tspan><tspan x="416.14801025390625" dy="1em">​</tspan>      <tspan x="391.392" y="137.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">nationality</tspan><tspan x="416.14801025390625" dy="1em">​</tspan>      <tspan x="405.044" y="150.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">birth</tspan><tspan x="416.14801025390625" dy="1em">​</tspan>      <tspan x="399.34" y="163.76" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">fields</tspan><tspan x="416.14801025390625" dy="1em">​</tspan>    </text>
+  <path d="M 173.166 293.994 L 266.304 293.994 L 266.304 317.218 L 173.166 317.218 L 173.166 293.994 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="221.666" y="305.606">
+      <tspan x="197.026" y="307.493" font-family="HelveticaNeue-Bold" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">Publisher</tspan>
+    </text>
+  <path d="M 173.166 317.218 L 266.304 317.218 L 266.304 375.298 L 173.166 375.298 L 173.166 317.218 Z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <text style="white-space: pre;" x="219.735" y="353.214">
+      <tspan x="206.183" y="330.153" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">name</tspan>
+      <tspan x="201.299" y="343.153" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">country</tspan>
+      <tspan x="199.357" y="356.153" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">founded</tspan>
+      <tspan x="202.927" y="369.153" font-family="HelveticaNeue-Italic" font-size="11" fill="#000000" style="font-size: 11px; word-spacing: 0px;">genere</tspan>
+    </text>
+  <path d="M 262.34 136.486 L 369.579 136.486" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <path d="M 355.551 136.486 L 369.579 127.211" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <path d="M 355.551 136.486 L 369.579 147.305" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <path d="M 214.893 293.994 L 214.893 184.204" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <path d="M 214.893 195.995 L 201.755 184.204" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+  <path d="M 214.893 195.995 L 228.804 184.204" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+</svg>

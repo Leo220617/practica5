@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- file: views/professor.php -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{titles}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+
+ <div class="container">
+
+  <div class="row">
+    <div class="eleven column" style="text-align: left; margin-top: 5%;">
+      <button><a href="/">Home</a></button>
+    </div>
+   <div class="eleven column" style="margin-top: 5%">
+     <h2>{{titles}}</h2>
+     <table>
+      <tr><th>Title</th>
+          <th>Edition</th><th>Copyright</th>
+          <th>Language</th><th>Pages</th>
+          <th>Author</th>
+          <th>Publisher</th>
+          <th>Action</th>
+        </tr>
+       
+       {{#books}}
+      <tr>
+    <!--  <td>{{id}}</td>-->
+          <td><a href="/book/{{id}}" > {{title}}</a></td>
+          <td>{{edition}}</td>
+          <td>{{copyright}}</td>
+          <td> {{language}} </td>
+          <td> {{pages}} </td>
+          <td> {{author}} </td>
+       <!--   <td> {{authorid}} </td>-->
+          <td> {{publisher}} </td>
+         <!-- <td> {{publisherid}} </td>-->
+         <td>
+          <a class="button" href="book/{{id}}">Show</a>
+          {{#login}}
+          <a class="button" href="book/{{id}}/edit">Edit</a>
+          <a class="button" href="book/{{id}}/delete">Erase</a>
+          {{/login}}
+          </td>
+          </tr>
+   {{/books}}
+     </table>
+     <a class="button button-primary" href="/book/create">New</a>
+    </div>
+   </div>
+ </div>
+</body>

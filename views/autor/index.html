@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- file: views/professor.php -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="eleven column" style="text-align: left; margin-top: 5%;">
+      <button><a href="/">Home</a></button>
+    </div>
+   <div class="eleven column" style="margin-top: 10%">
+     <h2>{{title}}</h2>
+     <table>
+      <tr><th>Name</th>
+          <th>Nationality</th>
+          <th>Birth Year</th>
+          <th>Fields</th>
+          <th>Actions</th>
+        </tr>
+       
+       {{#autores}}
+      <tr>
+    <!--  <td>{{id}}</td>-->
+          <td> <a href="/author/{{id}}"> {{author}}</a></td>
+          <td>{{nationality}}</td>
+          <td>{{birth_year}}</td>
+          <td> {{fields}} </td>
+          <td>
+            <a class="button" href="author/{{id}}">Show</a>
+            {{#login}}
+            <a class="button" href="author/{{id}}/edit">Edit</a>
+            <a class="button" href="author/{{id}}/delete">Erase</a>
+            {{/login}}
+            </td>
+          </tr>
+   {{/autores}}
+     </table>
+     <a class="button button-primary" href="/author/create">New</a>
+    </div>
+   </div>
+ </div>
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- file: views/professor/edit.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    {{#editorial}}
+    <form action="/editorial/{{id}}" method="POST">
+     <input type="hidden" name="_method" value="PUT">
+     
+     
+     <div class="row">
+      <div class="six columns">
+       <label for="publisher">Name</label>
+       <input class="u-full-width" type="text" 
+          name="publisher" value="{{publisher}}">
+      </div>
+      <div class="six columns">
+       <label for="degreeInput">Country</label>
+       <input class="u-full-width" type="text" 
+          name="country" value="{{country}}">
+      </div>
+     </div>
+     <div class="row">
+      <div class="six columns">
+       <label for="emailInput">Founded</label>
+       <input class="u-full-width" type="text" 
+          name="founded" value="{{founded}}">
+      </div>
+      <div class="six columns">
+       <label for="genere">Genere</label>
+       <input class="u-full-width" type="text" 
+         name="genere" value="{{genere}}">
+      </div>
+      <div class="row">
+         <div class="six columns">
+          <label for="books__book_id">books__book_id</label>
+          <input class="u-full-width" type="text" 
+             name="books__book_id" value="{{books__book_id}}">
+         </div>
+         <div class="six columns">
+          <label for="books__title">books__title</label>
+          <input class="u-full-width" type="text" 
+             name="books__title" value="{{books__title}}">
+         </div>
+        </div>
+      <a class="button button-primary" href="/editorial">Back</a>
+    </div>
+
+     <input class="button-primary" type="submit" value="Update">
+    </form>
+    {{/editorial}}
+   </div>
+  </div>
+ </div>
+</body>
